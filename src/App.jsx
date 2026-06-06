@@ -21,7 +21,7 @@ import logo4 from "./assets/logo (4).png";
 import image8 from "./assets/image8.png";
 import ic from "./assets/icon1.png";
 import ic2 from "./assets/icon2.png";
-import ic3 from "./assets/vector.png";
+import ic3 from "./assets/ic3.png";
 import ic4 from "./assets/calls.png";
 import c1 from "./assets/c1.png";
 import c2 from "./assets/c2.png";

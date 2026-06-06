@@ -2,7 +2,7 @@ import { useState } from 'react'
 import '../App.css'
 import ic from "../assets/icon1.png";
 import ic2 from "../assets/icon2.png";
-import ic3 from "../assets/vector.png";
+import ic3 from "../assets/ic3.png";
 import ic4 from "../assets/calls.png";
 
 
