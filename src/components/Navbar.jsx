@@ -27,7 +27,7 @@ function Navbar () {
          <li className="nav-item">
           <a className="nav-link" href="/sign">Sign in</a>
         </li>
-        <a className="btn btn-dark shadow" href="/createpage">Sign in</a>
+        <a className="btn btn-dark shadow" href="/createpage">Sign up</a>
       </ul>
         </div>
      </div>
