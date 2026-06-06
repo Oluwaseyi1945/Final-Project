@@ -958,56 +958,49 @@ margin-top: 40px;
 .features-text h6 {
   margin: 0; /* remove default spacing */
 }
-
-.gallery{
-   width: 100%;
-min-height: 611px;
-display: flex;
-align-items: center;
-font-family: 'Volkhov', sans-serif;
-justify-content: flex-start;
-margin-top: 90px;
-flex-direction: column;
-
+.gallery {
+  width: 100%;
+  min-height: 611px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Volkhov', sans-serif;
+  margin-top: 90px;
+  padding: 0 20px;
 }
+
 .gallery p {
   max-width: 500px;
   text-align: center;
   line-height: 1.6;
-  margin: 0;
+  margin: 10px 0 0;
 }
 
-.gallery-img{
+/* IMAGE GRID */
+.gallery-img {
   width: 100%;
-min-height: 380px;
-display: flex;
-align-items: start;
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-margin-top: 121px;
-justify-content: start;
-
-
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 80px;
 }
 
+/* CARD */
 .card2 {
-  width: auto;
+  width: 100%;
   text-align: center;
   color: #333;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  justify-content: flex-start;
-  
-  
+  overflow: hidden;
 }
 
 .card-image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
- 
 }
-/*isntagram*/
-
-
 
 .subscribe{
     display: flex;
@@ -2437,5 +2430,63 @@ background: linear-gradient(180deg, #FFFFFF 0%, #FAFAFA 100%);
 
   .slider-controls {
     justify-content: center;
+  }
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .gallery-img {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .gallery {
+    margin-top: 60px;
+  }
+
+  .gallery-img {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  .gallery-img {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery p {
+    font-size: 14px;
+  }
+}/* TABLET */
+@media (max-width: 1024px) {
+  .gallery-img {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .gallery {
+    margin-top: 60px;
+  }
+
+  .gallery-img {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  .gallery-img {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery p {
+    font-size: 14px;
   }
 }
